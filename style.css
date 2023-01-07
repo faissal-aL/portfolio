@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+/* font name : manrope , weights 400 and 700 */
 
+:root{
+    --font1 : Manrope;
+}
 
 *{
-    border: 1px solid green;
+
 }
 body{
-   
+   background-color: rgba(0,0,0,.8);
+   color: rgba(255, 255, 255, 0.786);
+   font-family: var(--font1);
+   padding: 1em;
+
 }
 
 .projects{
@@ -13,12 +22,13 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+div{
+    background-color: black;
+}
+.text-side{
+    padding: 2em;
+}
+
 img{
     width: 100%;
-}
-img:hover{
-    cursor: pointer;
-    scale: 1.1;
-    transition: 0.5s;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
 }
