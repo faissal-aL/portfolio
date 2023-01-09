@@ -1,34 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 /* font name : manrope , weights 400 and 700 */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+/* font name : lora , weights 400 and 600 */
+@import url('https://fonts.googleapis.com/css2?family=Rambla:wght@400;700&display=swap');
 
 :root{
     --font1 : Manrope;
+    --font2 : Rambla;
+    /* colors */
+    --blackish : #2b2834;
+    --white :#fcfdfc;
+    --blue : #62bafd;
+    --red : #ed4d36;
+    --lightgray : #a3a2a2;
 }
 
 *{
 
 }
 body{
-   background-color: rgba(0,0,0,.8);
-   color: rgba(255, 255, 255, 0.786);
+   /* background-color: var(--blackish); */
+   background-color: rgb(22,22,22);
+   color: var(--white);
    font-family: var(--font1);
-   padding: 1em;
+   padding: 3em;
 
 }
-
+h3{
+    font-family: var(--font2);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--blue);
+}
 .projects{
     display: grid;
-    grid-gap: 2em;
+    grid-gap: 3em;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-div{
-    background-color: black;
+.project-container{
+   /*  background-color: #6a5e62; */
+    background-color: rgb(36,37,36);
+    border-radius: 10px;
+    padding: 1em;
+    position: relative;
 }
 .text-side{
-    padding: 2em;
+
+    padding: 0px;
+    text-align: center;
+}
+h2{
+    font-family: var(--font2);
+    color: var(--red);
+}
+p{
+    margin-bottom: 4em;
+}
+a{
+    display: flex;
+    justify-content: center;
+}
+a:link , a:visited , a:hover , a:active { text-decoration: none; }
+
+button{
+    font-family: var(--font2);
+    position: absolute;
+    bottom: 1em;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    height: 3em;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--red);
+    transition: width 0.5s;
+}
+button:hover{
+    cursor: pointer;
+    width: 55%;
+
+}
+img{
+   
+    border-radius: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    width: 100%;
 }
 
-img{
-    width: 100%;
+.tip-calculator{
+    grid-column: 2 / 3;
 }
