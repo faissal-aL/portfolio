@@ -163,9 +163,9 @@ img:hover{
 
 }
 
-.interactive-card{
+/* .interactive-card{
     grid-column: 2 / 3;
-}
+} */
 
 
 @media screen and (width<700px) {
